@@ -13,13 +13,20 @@ public abstract class PolyEntity extends Entity {
 		components = coms;
 	}
 	
+	protected int[] translateBounds (int[] arrayOld, int x){
+		int[] arrayNew = new int[arrayOld.length];
+		for (int i = 0; i < arrayOld.length; i++){
+			arrayNew[i] = arrayOld[i] + x;
+		}
+		
+		return arrayNew;
+	}
+	
+	
 	@Override
 	public abstract void tickAction(Object b);
 
 	@Override
-	public void draw(Graphics g) {
-		// TODO Auto-generated method stub
-		g.drawImage(ImportManager.getImage(image), xCoord, yCoord, height, width, null);
-	}
+	public abstract void draw(Graphics g);
 	
 }

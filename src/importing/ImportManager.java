@@ -30,7 +30,7 @@ public class ImportManager {
 	}
 	
 	public static ArrayList<Entity> initEnts(){
-		Ship e = new Ship(100,80,390,500,0); 
+		Ship e = new Ship(540,230,390,500,0); 
 		ArrayList<Entity> ents = new ArrayList<Entity>();
 
 		ents.add(e);

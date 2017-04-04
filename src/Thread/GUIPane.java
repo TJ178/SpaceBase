@@ -26,7 +26,7 @@ ActionListener, KeyListener, MouseListener{
 	private boolean clicked;
 	private GameController gaco;
 	int time;
-	private final int winWidth = 900, winHeight = 506;
+	private final int winWidth = 1280, winHeight = 720;
 	String testing;
 	
 	public GUIPane(){
@@ -93,7 +93,7 @@ ActionListener, KeyListener, MouseListener{
 		clickedX = e.getX();
 		clickedY = e.getY();
 		clicked = true;
-		System.out.print("wha");
+		System.out.print("\n wha");
 		for(Entity x : ents){
 			x.checkBounds(clickedX, clickedY);
 		}
